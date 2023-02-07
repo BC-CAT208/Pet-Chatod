@@ -1,5 +1,59 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 339189179250544,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Sprite",
+					"sid": 383189653466165,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 447595217895422
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite",
+					"sid": 628245305082713,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"comparison": 5,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 255327155188122,
+					"parameters": {
+						"animation": "\"Egg Crack\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 886841757247912
+		}
+	],
 	"sid": 161386051059829
 }
