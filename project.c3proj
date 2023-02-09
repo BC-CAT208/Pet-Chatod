@@ -19,12 +19,19 @@
 			"name": "Sprite",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pulse",
+			"name": "Pulse",
+			"author": "Danguafer/Silexars",
+			"bundled": false
 		}
 	],
 	"uniqueId": "vktplhvjb6h",
 	"objectTypes": {
 		"items": [
-			"Sprite",
+			"Dago",
 			"Mouse"
 		],
 		"subfolders": []

@@ -17,11 +17,37 @@
 			"actions": [
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Sprite",
-					"sid": 383189653466165,
+					"objectClass": "Dago",
+					"sid": 604189489003108,
 					"parameters": {
 						"instance-variable": "Clicks",
 						"value": "1"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Dago",
+					"sid": 797342921713604,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Pulse\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 379703007025138,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Dago",
+					"sid": 613185504491874,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Pulse\""
 					}
 				}
 			],
@@ -32,7 +58,7 @@
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 425233135667688,
 					"parameters": {
 						"instance-variable": "Clicks",
@@ -44,7 +70,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 255327155188122,
 					"parameters": {
 						"animation": "\"Egg Crack\"",
@@ -59,7 +85,7 @@
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 501119622988127,
 					"parameters": {
 						"instance-variable": "Clicks",
@@ -71,7 +97,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 339153904425106,
 					"parameters": {
 						"animation": "\"Infant\"",
@@ -86,7 +112,7 @@
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 353874130083238,
 					"parameters": {
 						"instance-variable": "Clicks",
@@ -98,7 +124,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 698760536889944,
 					"parameters": {
 						"animation": "\"Feet\"",
@@ -113,7 +139,7 @@
 			"conditions": [
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 106463863749633,
 					"parameters": {
 						"instance-variable": "Clicks",
@@ -125,7 +151,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite",
+					"objectClass": "Dago",
 					"sid": 690688666668119,
 					"parameters": {
 						"animation": "\"Wings\"",
@@ -134,6 +160,33 @@
 				}
 			],
 			"sid": 317294824791462
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dago",
+					"sid": 774150658368765,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"comparison": 5,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dago",
+					"sid": 861494415566528,
+					"parameters": {
+						"animation": "\"Adult\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 574017571959382
 		}
 	],
 	"sid": 161386051059829

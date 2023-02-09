@@ -2,45 +2,46 @@
 	"name": "Layout 1",
 	"layers": [
 		{
-			"name": "BG",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [],
-			"sid": 590282619796609,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.8823529411764706,
-				0.03529411764705882,
-				0.03529411764705882,
-				1
-			],
-			"isTransparent": false,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "game",
 			"overriden": 0,
-			"subLayers": [],
+			"subLayers": [
+				{
+					"name": "BG",
+					"overriden": 0,
+					"subLayers": [],
+					"instances": [],
+					"sid": 590282619796609,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.8823529411764706,
+						0.03529411764705882,
+						0.03529411764705882,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				}
+			],
 			"instances": [
 				{
-					"type": "Sprite",
+					"type": "Dago",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "egg",
@@ -53,11 +54,24 @@
 						"Clicks": 0
 					},
 					"behaviors": {},
+					"effects": {
+						"Pulse": {
+							"isEnabled": false,
+							"parameters": {
+								"intensity": 0.1,
+								"lighting": 0.05,
+								"speed": 10,
+								"frequency": 100,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
+					},
 					"world": {
-						"x": 314,
-						"y": 279,
+						"x": 296,
+						"y": 190,
 						"width": 338,
-						"height": 299,
+						"height": 307,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
