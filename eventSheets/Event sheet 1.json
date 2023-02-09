@@ -33,11 +33,11 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Sprite",
-					"sid": 628245305082713,
+					"sid": 425233135667688,
 					"parameters": {
 						"instance-variable": "Clicks",
 						"comparison": 5,
-						"value": "2"
+						"value": "5"
 					}
 				}
 			],
@@ -53,6 +53,87 @@
 				}
 			],
 			"sid": 886841757247912
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite",
+					"sid": 501119622988127,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"comparison": 5,
+						"value": "20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 339153904425106,
+					"parameters": {
+						"animation": "\"Infant\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 831177992477893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite",
+					"sid": 353874130083238,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"comparison": 5,
+						"value": "35"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 698760536889944,
+					"parameters": {
+						"animation": "\"Feet\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 685346204168959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite",
+					"sid": 106463863749633,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"comparison": 5,
+						"value": "50"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 690688666668119,
+					"parameters": {
+						"animation": "\"Wings\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 317294824791462
 		}
 	],
 	"sid": 161386051059829
