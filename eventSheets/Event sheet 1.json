@@ -65,6 +65,11 @@
 						"comparison": 5,
 						"value": "5"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 943357505263961
 				}
 			],
 			"actions": [
@@ -92,6 +97,11 @@
 						"comparison": 5,
 						"value": "20"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 446715826671874
 				}
 			],
 			"actions": [
@@ -119,6 +129,11 @@
 						"comparison": 5,
 						"value": "25"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 791107340148867
 				}
 			],
 			"actions": [
@@ -146,6 +161,11 @@
 						"comparison": 5,
 						"value": "35"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 886973544848158
 				}
 			],
 			"actions": [
@@ -173,6 +193,11 @@
 						"comparison": 5,
 						"value": "50"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 426868299876021
 				}
 			],
 			"actions": [
@@ -200,6 +225,11 @@
 						"comparison": 5,
 						"value": "70"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 691323798159526
 				}
 			],
 			"actions": [
@@ -227,6 +257,11 @@
 						"comparison": 5,
 						"value": "100"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 519934634803241
 				}
 			],
 			"actions": [
@@ -238,6 +273,19 @@
 						"animation": "\"Adult\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 638222566415659,
+					"parameters": {
+						"seconds": "5.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 179348717969735
 				}
 			],
 			"sid": 574017571959382
