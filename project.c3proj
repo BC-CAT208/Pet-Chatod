@@ -21,6 +21,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "pulse",
 			"name": "Pulse",
@@ -32,7 +39,10 @@
 	"objectTypes": {
 		"items": [
 			"Dago",
-			"Mouse"
+			"Mouse",
+			"Lava",
+			"Rrock",
+			"Volcano"
 		],
 		"subfolders": []
 	},
