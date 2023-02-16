@@ -28,6 +28,13 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "pulse",
 			"name": "Pulse",
@@ -42,7 +49,9 @@
 			"Mouse",
 			"Lava",
 			"Rrock",
-			"Volcano"
+			"Volcano",
+			"Fireball",
+			"fireball2"
 		],
 		"subfolders": []
 	},

@@ -113,6 +113,33 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Dago",
+					"sid": 327219187541829,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"comparison": 5,
+						"value": "25"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dago",
+					"sid": 124168492382944,
+					"parameters": {
+						"animation": "\"Blink\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 810393998868240
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dago",
 					"sid": 353874130083238,
 					"parameters": {
 						"instance-variable": "Clicks",
@@ -160,6 +187,33 @@
 				}
 			],
 			"sid": 317294824791462
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dago",
+					"sid": 820919947380246,
+					"parameters": {
+						"instance-variable": "Clicks",
+						"comparison": 5,
+						"value": "70"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dago",
+					"sid": 330723213542857,
+					"parameters": {
+						"animation": "\"Flap\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 322137349617958
 		},
 		{
 			"eventType": "block",
