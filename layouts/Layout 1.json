@@ -64,10 +64,10 @@
 							"world": {
 								"x": 311,
 								"y": 414,
-								"width": 250,
-								"height": 250,
-								"originX": 0.5,
-								"originY": 0.5,
+								"width": 213,
+								"height": 53,
+								"originX": 0.5633802816901409,
+								"originY": 0.5283018867924528,
 								"color": [
 									1,
 									1,
@@ -147,10 +147,10 @@
 							"world": {
 								"x": 568,
 								"y": 482,
-								"width": 100,
-								"height": 102,
-								"originX": 0.5,
-								"originY": 0.5,
+								"width": 48.400000000000006,
+								"height": 49.367999999999995,
+								"originX": 0.4793388429752066,
+								"originY": 0.49586776859504134,
 								"color": [
 									1,
 									1,
@@ -191,10 +191,10 @@
 							"world": {
 								"x": 92,
 								"y": 485,
-								"width": 87,
-								"height": 89,
-								"originX": 0.5,
-								"originY": 0.5,
+								"width": 42.108,
+								"height": 43.076,
+								"originX": 0.4793388429752066,
+								"originY": 0.49586776859504134,
 								"color": [
 									1,
 									1,
@@ -266,10 +266,10 @@
 					"world": {
 						"x": 298,
 						"y": 313,
-						"width": 338,
-						"height": 307,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 243.99374999999998,
+						"height": 276.9395833333333,
+						"originX": 0.5432900432900433,
+						"originY": 0.535796766743649,
 						"color": [
 							1,
 							1,
@@ -313,7 +313,51 @@
 			"name": "UI",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Timer",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 30,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.9803921568627451,
+							0.9803921568627451,
+							0.9803921568627451,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 50,
+						"y": 6,
+						"width": 541,
+						"height": 129,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 409267418385971,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

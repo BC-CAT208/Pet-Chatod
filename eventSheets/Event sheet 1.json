@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "totalTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 710824349054797
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -286,9 +296,97 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 179348717969735
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 380736656327120
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 414249280102672,
+					"disabled": true,
+					"parameters": {
+						"text": "\"Time: \" & 0"
+					}
 				}
 			],
 			"sid": 574017571959382
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 769700339028143,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 888866847106232,
+					"disabled": true,
+					"parameters": {
+						"variable": "totalTime",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 703850313703953
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 262779744158839
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 296123828836355,
+					"parameters": {
+						"variable": "totalTime",
+						"value": ".01"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 185748926697012,
+					"disabled": true,
+					"parameters": {
+						"text": "\"Time: \" &zeropad(floor(time/84600),2)&\"h \"&zeropad(floor(time/60%60),2)&\"m \"&zeropad(floor(time%60),2)&\"s\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 457167751557476,
+					"parameters": {
+						"text": "\"Time: \" &zeropad(floor(totalTime/84600),2)&\"h \"&zeropad(floor(totalTime/60%60),2)&\"m \"&zeropad(floor(totalTime%60),2)&\"s\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 623209083203769,
+					"disabled": true,
+					"parameters": {
+						"text": "\"Time \" &  totalTime"
+					}
+				}
+			],
+			"sid": 334457040435485
 		}
 	],
 	"sid": 161386051059829
