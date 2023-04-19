@@ -1,20 +1,42 @@
 {
-	"name": "Lava",
-	"plugin-id": "TiledBg",
-	"sid": 988656038668102,
+	"name": "lava",
+	"plugin-id": "Sprite",
+	"sid": 202275460349640,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
-	"image": {
-		"width": 250,
-		"height": 250,
-		"originX": 0.5,
-		"originY": 0.5,
-		"originalSource": "",
-		"exportFormat": "lossless",
-		"exportQuality": 0.8,
-		"imageSpriteId": 4303992,
-		"useCollisionPoly": true
+	"effectTypes": [
+		{
+			"effectId": "warpripple",
+			"name": "WarpRipple"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3423354,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 503718259129060,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
 	}
 }

@@ -1,0 +1,18 @@
+{
+	"name": "Break",
+	"plugin-id": "Text",
+	"sid": 578338669718224,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "bulge",
+			"name": "Bulge"
+		},
+		{
+			"effectId": "pulse",
+			"name": "Pulse"
+		}
+	]
+}

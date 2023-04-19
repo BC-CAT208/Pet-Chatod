@@ -11,7 +11,12 @@
 			"sid": 476468700624998
 		}
 	],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "pulse",
+			"name": "Pulse"
+		}
+	],
 	"animations": {
 		"items": [
 			{

@@ -11,74 +11,6 @@
 					"subLayers": [],
 					"instances": [
 						{
-							"type": "Lava",
-							"properties": {
-								"initially-visible": true,
-								"origin": "top-left",
-								"wrap-horizontal": "repeat",
-								"wrap-vertical": "repeat",
-								"image-offset-x": 0,
-								"image-offset-y": 0,
-								"image-scale-x": 1,
-								"image-scale-y": 1,
-								"image-angle": 0,
-								"enable-tile-randomization": false,
-								"x-random": 1,
-								"y-random": 1,
-								"angle-random": 1,
-								"blend-margin-x": 0.1,
-								"blend-margin-y": 0.1
-							},
-							"uid": 4,
-							"instanceVariables": {},
-							"behaviors": {},
-							"world": {
-								"x": -15,
-								"y": 333,
-								"width": 669,
-								"height": 172,
-								"originX": 0,
-								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
-							"type": "Rrock",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 5,
-							"instanceVariables": {},
-							"behaviors": {},
-							"world": {
-								"x": 311,
-								"y": 414,
-								"width": 213,
-								"height": 53,
-								"originX": 0.5633802816901409,
-								"originY": 0.5283018867924528,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
 							"type": "Volcano",
 							"properties": {
 								"initially-visible": true,
@@ -104,7 +36,7 @@
 								"x": 0,
 								"y": 2,
 								"width": 647,
-								"height": 334,
+								"height": 360,
 								"originX": 0,
 								"originY": 0,
 								"color": [
@@ -141,6 +73,19 @@
 										"magnitude-random": 0,
 										"enabled": true,
 										"live-preview": false
+									}
+								}
+							},
+							"effects": {
+								"Pulse": {
+									"isEnabled": true,
+									"parameters": {
+										"intensity": 1,
+										"lighting": 0.5,
+										"speed": 10,
+										"frequency": 30,
+										"center-x": 0.5,
+										"center-y": 0.5
 									}
 								}
 							},
@@ -188,6 +133,19 @@
 									}
 								}
 							},
+							"effects": {
+								"Pulse": {
+									"isEnabled": true,
+									"parameters": {
+										"intensity": 1,
+										"lighting": 0.5,
+										"speed": 10,
+										"frequency": 30,
+										"center-x": 0.5,
+										"center-y": 0.5
+									}
+								}
+							},
 							"world": {
 								"x": 92,
 								"y": 485,
@@ -195,6 +153,74 @@
 								"height": 43.076,
 								"originX": 0.4793388429752066,
 								"originY": 0.49586776859504134,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "lava",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 4,
+							"instanceVariables": {},
+							"behaviors": {},
+							"effects": {
+								"WarpRipple": {
+									"isEnabled": true,
+									"parameters": {
+										"frequency": 3,
+										"amplitude": 0.03,
+										"speed": 1
+									}
+								}
+							},
+							"world": {
+								"x": 317,
+								"y": 430,
+								"width": 646,
+								"height": 186,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "Rrock",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 5,
+							"instanceVariables": {},
+							"behaviors": {},
+							"world": {
+								"x": 320,
+								"y": 422,
+								"width": 213,
+								"height": 53,
+								"originX": 0.5633802816901409,
+								"originY": 0.5283018867924528,
 								"color": [
 									1,
 									1,
@@ -264,8 +290,8 @@
 						}
 					},
 					"world": {
-						"x": 298,
-						"y": 313,
+						"x": 304,
+						"y": 319,
 						"width": 243.99374999999998,
 						"height": 276.9395833333333,
 						"originX": 0.5432900432900433,
@@ -297,7 +323,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -341,10 +367,116 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 50,
+						"x": 45,
 						"y": 6,
 						"width": 541,
 						"height": 129,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Break",
+					"properties": {
+						"text": "BREAK THE EGG",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 25,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.9882352941176471,
+							0.011764705882352941,
+							0.011764705882352941,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 11,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Bulge": {
+							"isEnabled": false,
+							"parameters": {
+								"radius": 0.3,
+								"scale": 0.1
+							}
+						},
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.2,
+								"lighting": 0.2,
+								"speed": 10,
+								"frequency": 30,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
+					},
+					"world": {
+						"x": 120,
+						"y": 106,
+						"width": 381,
+						"height": 46,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "End",
+					"properties": {
+						"text": "YOU DID IT...Now go touch some grass",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.8745098039215686,
+							0.8666666666666667,
+							0.8666666666666667,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 12,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 163,
+						"y": 96,
+						"width": 294,
+						"height": 64,
 						"originX": 0,
 						"originY": 0,
 						"color": [

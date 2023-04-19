@@ -187,6 +187,14 @@
 						"animation": "\"Feet\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Break",
+					"sid": 590353275063292,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 685346204168959
@@ -285,6 +293,14 @@
 					}
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "End",
+					"sid": 670941146925080,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 638222566415659,
@@ -320,9 +336,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 769700339028143,
+					"sid": 275557595941992,
 					"parameters": {
-						"interval-seconds": "1.0"
+						"interval-seconds": "5.0"
 					}
 				}
 			],
@@ -338,7 +354,8 @@
 					}
 				}
 			],
-			"sid": 703850313703953
+			"sid": 703850313703953,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -353,10 +370,10 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 296123828836355,
+					"sid": 467297097172198,
 					"parameters": {
 						"variable": "totalTime",
-						"value": ".01"
+						"value": ".50"
 					}
 				},
 				{

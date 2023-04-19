@@ -50,9 +50,23 @@
 		},
 		{
 			"type": "effect",
+			"id": "bulge",
+			"name": "Bulge",
+			"author": "Brad Larson",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "pulse",
 			"name": "Pulse",
 			"author": "Danguafer/Silexars",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpripple",
+			"name": "Warp ripple",
+			"author": "Scirra",
 			"bundled": false
 		}
 	],
@@ -61,13 +75,15 @@
 		"items": [
 			"Dago",
 			"Mouse",
-			"Lava",
 			"Rrock",
 			"Volcano",
 			"Fireball",
 			"fireball2",
 			"Timer",
-			"Date"
+			"Date",
+			"Break",
+			"lava",
+			"End"
 		],
 		"subfolders": []
 	},
